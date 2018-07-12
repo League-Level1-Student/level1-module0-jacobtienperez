@@ -22,15 +22,15 @@ public class PhotoQuiz {
                 quizWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   // This will make sure the program exits when you close the window
 
 		// 1. find an image on the internet, and put its URL in a String variable (from your browser, right click on the image, and select “Copy Image Address”)
-
+        String image = ("https://vignette.wikia.nocookie.net/nintendo/images/6/61/Super_Smash_Bros._Ultimate_-_Character_Art_-_Pichu.png/revision/latest/scale-to-width-down/480?cb=20180612175935&path-prefix=en");
 		// 2. create a variable of type "Component" that will hold your image
-
+            Component holder;
 		// 3. use the "createImage()" method below to initialize your Component
-
+          holder = createImage(image);
 		// 4. add the image to the quiz window
-
+quizWindow.add(holder);
 		// 5. call the pack() method on the quiz window
-
+     quizWindow.pack();
 		// 6. ask a question that relates to the image
 
 		// 7. print "CORRECT" if the user gave the right answer
